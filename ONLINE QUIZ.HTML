@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Maker</title>
+    <link rel="stylesheet" href="ONLINE QUIZ.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Online Quiz Maker</h1>
+        <div id="quiz-creation">
+            <h2>Create a New Quiz</h2>
+            <form id="create-quiz-form">
+                <label for="quiz-title">Quiz Title:</label>
+                <input type="text" id="quiz-title" required>
+                <label for="quiz-question">Question:</label>
+                <input type="text" id="quiz-question" required>
+                <label for="quiz-choices">Choices (comma separated):</label>
+                <input type="text" id="quiz-choices" required>
+                <label for="quiz-answer">Correct Answer:</label>
+                <input type="text" id="quiz-answer" required>
+                <button type="submit">Add Question</button>
+            </form>
+            <button id="save-quiz">Save Quiz</button>
+        </div>
+        <div id="quiz-list">
+            <h2>Available Quizzes</h2>
+            <ul id="quizzes"></ul>
+        </div>
+        <div id="quiz-taking">
+            <h2>Take Quiz</h2>
+            <div id="quiz-content"></div>
+            <button id="submit-quiz">Submit Quiz</button>
+        </div>
+        <div id="quiz-result">
+            <h2>Quiz Result</h2>
+            <p id="score"></p>
+        </div>
+    </div>
+    <script src="ONLINE QUIZ.js"></script>
+</body>
+
+</html>
